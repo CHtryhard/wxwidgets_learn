@@ -6,13 +6,13 @@ enum IDs
 	BUTTON_ID = 2,
 	SLIDER_ID = 3,
 	TEXT_ID = 4
-
+	
 };
 
 wxBEGIN_EVENT_TABLE(MainFrame, wxFrame)
-EVT_BUTTON(BUTTON_ID, MainFrame::OnButtonClicked)
-EVT_SLIDER(SLIDER_ID, MainFrame::OnSliderChanged)
-EVT_TEXT(TEXT_ID, MainFrame::OnTextChanged)
+	EVT_BUTTON(BUTTON_ID, MainFrame::OnButtonClicked)
+	EVT_SLIDER(SLIDER_ID, MainFrame::OnSliderChanged)
+	EVT_TEXT(TEXT_ID, MainFrame::OnTextChanged)
 wxEND_EVENT_TABLE()
 
 MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title) {
